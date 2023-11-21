@@ -20,6 +20,12 @@ const app = createApp({
         i++;
       }
     },
+
+    generatFinalEmail: function () {
+      if (this.emailArray.length === 10) {
+        return this.emailArray;
+      }
+    },
   },
 
   created() {
